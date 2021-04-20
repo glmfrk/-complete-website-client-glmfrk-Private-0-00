@@ -22,7 +22,7 @@ const Navbar = () => {
                 <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search" />
                 <button class="btn brand-brn" type="submit">Search</button>
             </div>
-            <div className="social-link d-flex col-md-4 col-lg-4 ">
+            <div className="social-link d-flex col-md-4 pt-3  col-lg-4 ">
                 <FontAwesomeIcon className="social-facebook social-icon" icon={faFacebook} />
                 <FontAwesomeIcon className="social-twitter social-icon" icon={faTwitter} />
                 <FontAwesomeIcon className="social-linkedin social-icon" icon={faLinkedinIn} />
