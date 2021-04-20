@@ -10,11 +10,11 @@ const ServicesCard = ({service}) => {
   
     return (
         <div className="col col-md-4 mb-5 cursor shadowCard p-3 text-center">
-           <Link to="#"> <img style={{height:'50px'}} src={service.image} alt={service.names} className="img-fluid"/></Link>
-           <Link to="#"> <h5  className="mt-3 headingColor ">{service.names}</h5></Link>
-           <b  className="headingColor ">length: {service.length} <span>$ {service.price}</span> </b><br/>
+           <Link to="#"> <img style={{height:'50px'}} src={service.imageURL} alt={service.names} className="img-fluid"/></Link>
+           <Link to="#"> <h5  className="mt-3 headingColor ">{service.serviceName}</h5></Link>
+           <b  className="headingColor ">length: {service.serviceLength} <span>$ {service.serviceCost}</span> </b><br/>
            <small className="headingColor font-weight-bold mb-3">qualifiction: {service.GPA}</small>
-            <p className="text-secoundary mt-4">{service.desCription}</p>
+            <p className="text-secoundary mt-4">{service.serviceBio}</p>
             <button onClick={handleService} className="btn brand-brn">Admit</button>
         
         </div>

@@ -35,6 +35,15 @@ import ServicesCard from '../ServicesCard/ServicesCard';
 ]
 
 const Services = () => {
+    const [serviceData,setServiceData] = useState([])
+    useEffect(()=>{
+        fetch(`https://gentle-plateau-05294.herokuapp.com/admin/add_service`)
+        .then(result => result.json())
+        .then(data =>{
+            console.log(data);
+            setServiceData(data)
+        })
+    })
     return (
         <>
         <section id="services" style={{height:'570px', marginTop: '151px'}} className="container-fluid pt-5 mt-5">
@@ -47,7 +56,7 @@ const Services = () => {
                 <div className="d-flex justify-content-center ">
                     <div className="w-75 row mt-5 pt-5">
                     {
-                        servicesData.map(service => <ServicesCard service={service}></ServicesCard>)
+                        serviceData.map(service => <ServicesCard service={service}></ServicesCard>)
                     }
                 
                     </div>
