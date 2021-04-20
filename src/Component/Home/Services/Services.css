@@ -1,0 +1,12 @@
+.services-container{
+    background-image: url('../../../images/wave-bnr.PNG') repeat-x;
+    background-size: cover;
+    height: 500px;
+    border-top:1px solid silver;
+}
+.cursor{
+    cursor: pointer;
+}
+.brand-color{
+    color: #005F7D;
+}

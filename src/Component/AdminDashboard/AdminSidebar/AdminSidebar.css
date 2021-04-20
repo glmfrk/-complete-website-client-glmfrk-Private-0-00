@@ -1,0 +1,56 @@
+main.dashBg{
+    background-image: linear-gradient(40deg, #4f5353,#0fcfec);
+    height: 100vh; 
+}
+.userBoardBg{
+    background-image: linear-gradient(40deg, #4f5353,#0fcfec);
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+}
+.userSidebar{
+    background-image: linear-gradient(40deg, #4f5353,#0fcfec);
+    /* background-color: #4f5353; */
+    position:fixed;
+    left: 18px;
+    height: 100vh;
+   
+}
+.logo_area{
+    width: 80px;
+    height: 80px;
+    border-radius: 1fr;
+    border: 1px solid #d1dfdf;
+    z-index: 7;
+    padding: 1px;
+    margin-left: 30px;
+}
+
+.dashFrom input.form-control{
+    background-color: #d1dfdf;
+    color: rgb(100, 112, 112);
+}
+.userSidebar li{
+    margin-bottom: 2em;
+}
+.userSidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px);
+}
+.userSidebar svg{
+    margin-right: 5px;
+}
+
+.navbar-brand .logoDash{
+    position: absolute;
+    z-index: 5;
+    top:10px;
+}
+.userContent{
+    top: 3pc;
+    left: 0;
+    right: 0;
+    margin-left: 16pc;
+    height: 100vh;
+    position: absolute;
+}

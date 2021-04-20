@@ -1,0 +1,77 @@
+
+.background{
+    background: #F7F7F7;
+
+}
+
+.social-icon {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(82, 179, 179);
+    font-size: 30px;
+    border-radius: 7px;
+    margin-right: 11px;
+    cursor: pointer;
+    transition: 0.4s all
+}
+.social-icon:hover{
+    transform: scale(1.1);
+    color: #0C2957;
+    
+}
+
+.header_container {
+    position: relative;
+    height: 555px;
+   
+}
+
+.header_container::after, .header_container::before {
+  
+    content:' ';
+    position: absolute;
+    top: 0;
+    height: 600px;
+    background-image:
+    url('../../../images/nurse.webp');
+    background-repeat: no-repeat;
+    background-position: inherit  ;
+    background-size: cover;
+}
+.header_container::after {
+    right: 0;
+    width: 100%;
+   
+    content: "";
+    background-image:
+    url('../../../images/nurse.webp');
+    background-repeat: no-repeat;
+    background-position: inherit  ;
+    background-size: cover;
+    z-index: -2;
+    
+}
+
+.header_container::before {
+ 
+  
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";  
+    background-image:
+     url('../../../images/breadcrumb-shape.png');
+    z-index: -1;
+    width: 33%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.wavebnr{
+    position: absolute;
+    margin-top: 100px;
+    opacity: 0.1;
+}
